@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+group 'sg.ctx.aws'
+version '1.0.0'
+
+sourceCompatibility = 1.11
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.alibaba:fastjson:1.2.56'
+    implementation 'io.jsonwebtoken:jjwt:0.9.1'
+    implementation 'com.google.code.findbugs:findbugs:3.0.1'
+    implementation 'org.apache.commons:commons-lang3:3.8.1'
+    implementation 'org.springframework.boot:spring-boot-starter:2.1.4.RELEASE'
+    implementation 'org.springframework.boot:spring-boot-configuration-processor:2.1.4.RELEASE'
+    implementation 'org.springframework.boot:spring-boot-autoconfigure:2.1.4.RELEASE'
+    implementation 'org.springframework.boot:spring-boot-starter-security:2.1.4.RELEASE'
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.1.4.RELEASE'
+    compile 'com.amazonaws:aws-java-sdk:1.11.468'
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+}
